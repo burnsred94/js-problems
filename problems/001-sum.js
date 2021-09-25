@@ -12,8 +12,19 @@
  * @param {number} n целое число
  * @returns {number}
  */
+
 function sum(n) {
-    return undefined;
-}
+    let count = 0;
+    if(n > 0){
+             for(let i = 0; i < n; i++ ){
+                count = count + i;
+            };
+        return count + n
+    }else if(n === 0 || n <= 0 || n == NaN || n == undefined){
+        return 1
+    };
+
+};
 
 module.exports = sum;
+
