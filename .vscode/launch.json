@@ -26,7 +26,7 @@
                 ]
             }
         },
-        // OUTDATED 
+        // OUTDATED
         {
             "name": "Debug on Linux/MacOS",
             "type": "node",

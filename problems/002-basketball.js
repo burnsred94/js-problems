@@ -16,7 +16,28 @@
  * @returns {(number|undefined)}
  */
 function getWinner(points) {
-    return undefined;
+    let firstCommand = 0;
+    let secondCommand = 0;
+    for(let i = 0; i < points.length; i++){
+        let fisrtCount = 0;
+        let secondCount = 0;
+        let commandMatch = points[i];
+        fisrtCount = Number(commandMatch.slice(0, -3));
+        secondCount = Number(commandMatch.slice(3));
+        firstCommand = firstCommand + fisrtCount;
+        secondCommand =  secondCommand + secondCount;
+    };
+
+        if(firstCommand > secondCommand){
+                return 1
+            }
+        if(secondCommand > firstCommand){
+                return 2
+            }
+        if(firstCommand === secondCommand) {
+            let result = undefined
+                return result
+    }
 }
 
 module.exports = getWinner;
